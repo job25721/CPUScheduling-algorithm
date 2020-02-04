@@ -29,12 +29,13 @@ def returnMapValue(List,Key):
 
 def FirstComeFirstServeScheduling(Process):
     Result = TimeCalculator(Process)
+    temp = Process.copy()
     # print("First come First serve Scheduling Algorithm")
     avgWaitingTime = Result[0][0]
     avgTurnAround = Result[0][1]
     turnPerProcess = Result[1]
     waitPerProcess = Result[2]
-    return [Process,avgWaitingTime,avgTurnAround,waitPerProcess,turnPerProcess]
+    return [temp,avgWaitingTime,avgTurnAround,waitPerProcess,turnPerProcess]
     
 
 def ShortestJobFirstScheduling(Process):
