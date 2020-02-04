@@ -3,7 +3,7 @@ Author : JOB'Pathomporn <br/>
 this code is a part of 261305 - Operating systems : CPECMU <br/>
 Experiment simulation 3 algorithms : <br/>
 <p>-  First come first serve scheduling</p>
-<p>-  Shortest job scheduling</p>
+<p>-  Shortest job first scheduling</p>
 <p>-  Round robin scheduling</p>
 
 <b>PS > git clone https://github.com/job25721/CPUScheduling-algorithm.git</b><br/>
