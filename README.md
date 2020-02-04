@@ -10,7 +10,7 @@ Experiment simulation 3 algorithms : <br/>
 <p>***To run this code***</p>
 <b>PS > </b>py ./main.py
 
-<b>**require matplotlib</b>
+<b>**require matplotlib,python</b>
 
 # Installation mathplotlib
 python -m pip install -U pip <br/>
