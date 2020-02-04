@@ -29,7 +29,7 @@ def returnMapValue(List,Key):
 
 def FirstComeFirstServeScheduling(Process):
     Result = TimeCalculator(Process)
-    print("First come First serve Scheduling Algorithm")
+    # print("First come First serve Scheduling Algorithm")
     avgWaitingTime = Result[0][0]
     avgTurnAround = Result[0][1]
     turnPerProcess = Result[1]
@@ -40,7 +40,7 @@ def FirstComeFirstServeScheduling(Process):
 def ShortestJobFirstScheduling(Process):
     Process = sorted(Process)
     Result = TimeCalculator(Process)
-    print("Shortest job first Scheduling Algorithm")
+    # print("Shortest job first Scheduling Algorithm")
     avgWaitingTime = Result[0][0]
     avgTurnAround = Result[0][1]
     turnPerProcess = Result[1]
@@ -99,7 +99,7 @@ def RoundRobinScheduling(Process,quantumTime):
     avgWaitingTime /= n
     avgTurnAround /= n
 
-    print("Round Robin Scheduling Algorithm")
+    # print("Round Robin Scheduling Algorithm")
     return [tempProcess,avgWaitingTime,avgTurnAround,waitPerProcess,turnPerProcess]
     
 

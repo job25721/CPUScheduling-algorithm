@@ -15,11 +15,11 @@ def RandProcess(Assumption):
         range1 = percentage(Process,70)
         range2 = percentage(Process,20)
         range3 = percentage(Process,10)
-        print("--------------------------------------")
-        print("[ Assumption  1 ]",Process,"Process")
-        print("[ take 2 - 8 ms ]",range1,"Process")
-        print("[ take 20 - 30 ms ]",range2,"Process")
-        print("[ take 35 - 40 ms ]",range3,"Process")
+        # print("--------------------------------------")
+        # print("[ Assumption  1 ]",Process,"Process")
+        # print("[ take 2 - 8 ms ]",range1,"Process")
+        # print("[ take 20 - 30 ms ]",range2,"Process")
+        # print("[ take 35 - 40 ms ]",range3,"Process")
         for i in range(range1):
             processList.append(random.randrange(2,8))
         for i in range(range2):
@@ -31,11 +31,11 @@ def RandProcess(Assumption):
         range1 = percentage(Process,50)
         range2 = percentage(Process,30)
         range3 = percentage(Process,20)
-        print("--------------------------------------")
-        print("[ Assumption  2 ]",Process,"Process")
-        print("[ take 2 - 8 ms ]",range1,"Process")
-        print("[ take 20 - 30 ms ]",range2,"Process")
-        print("[ take 35 - 40 ms ]",range3,"Process")
+        # print("--------------------------------------")
+        # print("[ Assumption  2 ]",Process,"Process")
+        # print("[ take 2 - 8 ms ]",range1,"Process")
+        # print("[ take 20 - 30 ms ]",range2,"Process")
+        # print("[ take 35 - 40 ms ]",range3,"Process")
         for i in range(range1):
             processList.append(random.randrange(2,8))
         for i in range(range2):
@@ -47,11 +47,11 @@ def RandProcess(Assumption):
         range1 = percentage(Process,40)
         range2 = percentage(Process,40)
         range3 = percentage(Process,20)
-        print("--------------------------------------")
-        print("[ Assumption  3 ]",Process,"Process")
-        print("[ take 2 - 8 ms ]",range1,"Process")
-        print("[ take 20 - 30 ms ]",range2,"Process")
-        print("[ take 35 - 40 ms ]",range3,"Process")
+        # print("--------------------------------------")
+        # print("[ Assumption  3 ]",Process,"Process")
+        # print("[ take 2 - 8 ms ]",range1,"Process")
+        # print("[ take 20 - 30 ms ]",range2,"Process")
+        # print("[ take 35 - 40 ms ]",range3,"Process")
         for i in range(range1):
             processList.append(random.randrange(2,8))
         for i in range(range2):
@@ -62,6 +62,7 @@ def RandProcess(Assumption):
         haveAssumption  = False
        
     if haveAssumption  == True:
+        random.shuffle(processList)
         return processList
     else:
         return False
